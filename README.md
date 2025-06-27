@@ -1,6 +1,3 @@
-Absolutely! Here's your revised `README.md` with a **handcrafted, human-style formatting** using `#`, `*`, and other common markdown conventions. It maintains a **developer-authored** tone—**clear, clean, and not overly polished like AI-generated content**—but still looks professional and readable.
-
----
 
 # 🧠 Post Similarity & Tag Generation Microservice
 
