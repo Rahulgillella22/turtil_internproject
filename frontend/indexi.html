@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turtil - AI Content Analysis Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Afacad', sans-serif;
+      background-color: #0e1218;
+      color: #e4e6ea;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      background-color: rgba(14, 18, 24, 0.95);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: rgba(59,197,83,1);
+    }
+
+    .logo-img {
+      height: 40px;
+      width: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link {
+      color: #e4e6ea;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(14, 18, 24, 0.98);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      min-width: 200px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      z-index: 1001;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .dropdown-item {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-item:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-item:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, rgb(37, 150, 190), rgb(25, 120, 160));
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(37, 150, 190, 0.3);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 10rem 3rem 4rem;
+      text-align: center;
+      background: radial-gradient(ellipse at center, rgba(37, 150, 190, 0.1) 0%, transparent 70%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #ffffff, rgba(59,197,83,1));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+    }
+
+    .hero-highlight {
+      color: rgba(59,197,83,1);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: #b0b3b8;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, rgba(59,197,83,1), rgba(45,180,70,1));
+      color: #0e1218;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(59,197,83,0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #e4e6ea;
+      padding: 1rem 2rem;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(59,197,83,1);
+      background-color: rgba(59,197,83,0.1);
+    }
+
+    /* Process Flow Section */
+    .process-flow {
+      padding: 4rem 3rem;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(37, 150, 190, 0.05), rgba(59,197,83,0.02));
+    }
+
+    .process-flow h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      color: #e4e6ea;
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .process-step {
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .step-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, rgba(59,197,83,1), rgba(45,180,70,1));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 2rem;
+      color: #0e1218;
+    }
+
+    .process-step h3 {
+      color: rgba(59,197,83,1);
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .process-step p {
+      color: #b0b3b8;
+      font-size: 1rem;
+    }
+
+    /* Challenge Section */
+    .challenge {
+      padding: 4rem 3rem;
+      text-align: center;
+    }
+
+    .challenge h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: #e4e6ea;
+    }
+
+    .challenge-subtitle {
+      font-size: 1.2rem;
+      color: #b0b3b8;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+
+    .challenge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .challenge-card {
+      background: rgba(20, 25, 35, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      text-align: center;
+    }
+
+    .challenge-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, rgba(59,197,83,1), rgba(45,180,70,1));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 1.5rem;
+      color: #0e1218;
+    }
+
+    .challenge-card h3 {
+      color: #e4e6ea;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .challenge-card p {
+      color: #b0b3b8;
+      margin-bottom: 1rem;
+    }
+
+    .challenge-stat {
+      color: rgba(59,197,83,1);
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 4rem 3rem;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(37, 150, 190, 0.05), rgba(59,197,83,0.02));
+    }
+
+    .features h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: #e4e6ea;
+    }
+
+    .features-subtitle {
+      font-size: 1.2rem;
+      color: #b0b3b8;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background: rgba(20, 25, 35, 0.8);
+      border: 2px solid rgba(59,197,83,1);
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, rgba(59,197,83,1), rgba(45,180,70,1));
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, rgba(59,197,83,1), rgba(45,180,70,1));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
+      color: #0e1218;
+      box-shadow: 0 4px 15px rgba(59,197,83,0.3);
+    }
+
+    .feature-card h3 {
+      color: rgba(59,197,83,1);
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card p {
+      color: #b0b3b8;
+    }
+
+    /* Dashboard Section */
+    .dashboard {
+      display: none;
+      padding: 8rem 3rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .dashboard.active {
+      display: block;
+    }
+
+    .dashboard-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .dashboard-header h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: rgba(59,197,83,1);
+    }
+
+    .dashboard-header p {
+      color: #b0b3b8;
+      font-size: 1.1rem;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .tool-card {
+      background: rgba(20, 25, 35, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .tool-card h3 {
+      color: rgba(59,197,83,1);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #e4e6ea;
+      font-weight: 500;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 1rem;
+      background: rgba(14, 18, 24, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      color: #e4e6ea;
+      font-family: 'Afacad', sans-serif;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: rgba(59,197,83,1);
+      box-shadow: 0 0 0 2px rgba(59,197,83,0.2);
+    }
+
+    .form-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .process-btn {
+      background: linear-gradient(135deg, rgb(37, 150, 190), rgb(25, 120, 160));
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      font-size: 1.1rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .process-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(37, 150, 190, 0.3);
+    }
+
+    .process-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .loading {
+      display: none;
+      color: rgba(59,197,83,1);
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+
+    .loading.active {
+      display: block;
+    }
+
+    .result-container {
+      margin-top: 1.5rem;
+    }
+
+    .result-pre {
+      background: rgba(14, 18, 24, 0.9);
+      border: 1px solid rgba(59,197,83,0.3);
+      border-radius: 8px;
+      padding: 1.5rem;
+      white-space: pre-wrap;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #e4e6ea;
+      max-height: 400px;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .result-pre.active {
+      display: block;
+    }
+
+    /* Stats Section */
+    .stats {
+      padding: 4rem 3rem;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(37, 150, 190, 0.1), rgba(59,197,83,0.05));
+    }
+
+    .stats h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      color: #e4e6ea;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .stat-item {
+      padding: 1.5rem;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: rgba(59,197,83,1);
+      display: block;
+    }
+
+    .stat-label {
+      color: #b0b3b8;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: #e4e6ea;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(135deg, rgba(14, 18, 24, 0.95), rgba(20, 25, 35, 0.9));
+      padding: 4rem 3rem 2rem;
+      border-top: 1px solid rgba(59,197,83,0.2);
+      margin-top: 4rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-section h4 {
+      color: rgba(59,197,83,1);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-section p {
+      color: #b0b3b8;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a {
+      color: #e4e6ea;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: rgba(59,197,83,1);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      text-align: center;
+    }
+
+    .footer-bottom p {
+      color: #b0b3b8;
+      margin: 0;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      background: rgba(59,197,83,0.1);
+      border: 1px solid rgba(59,197,83,0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(59,197,83,1);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      background: rgba(59,197,83,0.2);
+      transform: translateY(-2px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgba(14, 18, 24, 0.98);
+        backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        gap: 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-item {
+        width: 100%;
+      }
+
+      .nav-link {
+        width: 100%;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .dropdown-content {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background: rgba(255, 255, 255, 0.05);
+        margin-top: 0.5rem;
+      }
+
+      .hero {
+        padding: 8rem 1rem 3rem;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .process-flow,
+      .challenge,
+      .features,
+      .stats {
+        padding: 3rem 1rem;
+      }
+
+      .process-flow h2,
+      .challenge h2,
+      .features h2 {
+        font-size: 2rem;
+      }
+
+      .dashboard {
+        padding: 6rem 1rem 3rem;
+      }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-steps,
+      .challenge-grid,
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/lovable-uploads/4e0b545f-f367-4890-94ad-a35466f04678.png" alt="Turtil Logo" class="logo-img">
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-item">
+        <a href="#" class="nav-link" onclick="showHome()">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">
+          Solutions ▼
+        </a>
+        <div class="dropdown-content">
+          <div class="dropdown-item" onclick="showDashboard('similarity')">
+            🔍 Similarity Search
+          </div>
+          <div class="dropdown-item" onclick="showDashboard('tagging')">
+            🏷️ Auto-tagging
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Demo</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <button class="cta-button" onclick="showDashboard()">Feel it</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Automate EdTech & Real Estate Content<br><span class="hero-highlight">Analysis with AI Intelligence</span></h1>
+    <p>Transform manual content work into automated intelligence. Our AI automatically analyzes property descriptions, course content similarity, generates competitive tags, and optimizes your entire workflow in seconds - not hours.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="showDashboard()">
+        Start Free Trial →
+      </button>
+      <button class="btn-secondary" onclick="showDashboard()">
+        Feel it ✨
+      </button>
+    </div>
+  </section>
+
+  <!-- Process Flow Section -->
+  <section class="process-flow">
+    <h2>AI-Powered Content Workflow</h2>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-icon">📝</div>
+        <h3>Upload Content</h3>
+        <p>Simply input your property listings, course materials, or educational content for instant AI analysis</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">🧠</div>
+        <h3>AI Analysis</h3>
+        <p>Our AI instantly analyzes content for similarities, identifies key features, and generates competitive insights</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">⚡</div>
+        <h3>Auto Generation</h3>
+        <p>Tags, descriptions, and metadata generated automatically with market-competitive keywords and phrases</p>
+      </div>
+      <div class="process-step">
+        <div class="step-icon">🎯</div>
+        <h3>Optimized Results</h3>
+        <p>Ready-to-publish, conversion-optimized content for both real estate and educational platforms</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenge Section -->
+  <section class="challenge">
+    <h2>The Manual Content Challenge</h2>
+    <p class="challenge-subtitle">EdTech and Real Estate teams waste countless hours on repetitive content tasks that could be automated with intelligent AI systems</p>
+    <div class="challenge-grid">
+      <div class="challenge-card">
+        <div class="challenge-icon">⏰</div>
+        <h3>Time Consuming</h3>
+        <p>Teams spend 40+ hours weekly on manual content tagging, property descriptions, and course material optimization</p>
+        <div class="challenge-stat">40+ hrs/week</div>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">👁️</div>
+        <h3>Human Error</h3>
+        <p>Manual processes lead to inconsistent tagging, missed competitive keywords, and suboptimal content performance</p>
+        <div class="challenge-stat">30% Error Rate</div>
+      </div>
+      <div class="challenge-card">
+        <div class="challenge-icon">📈</div>
+        <h3>Scaling Issues</h3>
+        <p>Growing property portfolios and course catalogs overwhelm manual processes and team capacity</p>
+        <div class="challenge-stat">Can't Scale</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Powerful Features for Modern EdTech & Real Estate</h2>
+    <p class="features-subtitle">Everything you need to create, manage, and optimize your content with competitive AI-driven insights and market intelligence for both educational platforms and property listings.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>AI Content Generation</h3>
+        <p>Generate compelling property descriptions, course titles, and competitive metadata in seconds with advanced AI technology that understands market trends and educational content optimization.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>Smart Organization</h3>
+        <p>Automatically categorize and tag your properties and courses with intelligent organization systems that boost discoverability, improve search rankings, and increase student engagement.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👥</div>
+        <h3>Team Collaboration</h3>
+        <p>Work together seamlessly with your real estate and education teams using real-time collaboration, approval workflows, and shared content libraries designed for modern professionals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advanced Features Section -->
+  <section class="features" style="background: linear-gradient(135deg, rgba(59,197,83,0.05), rgba(37, 150, 190, 0.02));">
+    <h2>Advanced Features for EdTech & Real Estate Professionals</h2>
+    <p class="features-subtitle">Everything you need to create, manage, and optimize your educational content and property listings with AI assistance tailored for modern professionals.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>AI Content Generation</h3>
+        <p>Generate compelling property descriptions, course titles, and educational content in seconds with advanced AI technology that understands real estate markets and educational trends.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>Smart Property & Course Organization</h3>
+        <p>Automatically categorize and tag your properties and educational courses with intelligent organization systems that boost discoverability and improve search rankings for both real estate and EdTech platforms.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👥</div>
+        <h3>Team Collaboration</h3>
+        <p>Work together seamlessly with your real estate agents and education teams using real-time collaboration, approval workflows, and shared content libraries designed for modern professionals in both industries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <h3>Trusted by 10,000+ Businesses Worldwide</h3>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">10,000+</span>
+        <div class="stat-label">Active Users</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">2M+</span>
+        <div class="stat-label">Content Processed</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">99.9%</span>
+        <div class="stat-label">Uptime</div>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <div class="stat-label">Support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard" id="dashboard">
+    <div class="dashboard-header">
+      <h2>AI Content Analysis Dashboard</h2>
+      <p>Experience the power of automated content intelligence for EdTech and Real Estate</p>
+    </div>
+
+    <div class="tools-grid">
+      <!-- Similarity Checker -->
+      <div class="tool-card">
+        <h3>🔍 Content Similarity Checker</h3>
+        <div class="form-group">
+          <label for="title">Content Title</label>
+          <input type="text" id="title" class="form-input" placeholder="Enter your content title..." />
+        </div>
+        <div class="form-group">
+          <label for="body">Content Body</label>
+          <textarea id="body" class="form-input form-textarea" placeholder="Enter your content body..."></textarea>
+        </div>
+        <button class="process-btn" onclick="checkSimilarity()" id="similarity-btn">
+          Check Similarity
+        </button>
+        <div class="loading" id="similarity-loading">🔄 Analyzing content similarity...</div>
+        <div class="result-container">
+          <pre class="result-pre" id="similarity-result"></pre>
+        </div>
+      </div>
+
+      <!-- Tag Generator -->
+      <div class="tool-card">
+        <h3>🏷️ AI Tag Generator</h3>
+        <div class="form-group">
+          <label for="tag-text">Content for Tagging</label>
+          <textarea id="tag-text" class="form-input form-textarea" placeholder="Enter your content to generate relevant tags..."></textarea>
+        </div>
+        <button class="process-btn" onclick="generateTags()" id="tags-btn">
+          Generate Tags
+        </button>
+        <div class="loading" id="tags-loading">🔄 Generating intelligent tags...</div>
+        <div class="result-container">
+          <pre class="result-pre" id="tags-result"></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About Turtil</h4>
+        <p>Leading AI-powered content analysis platform transforming how EdTech and Real Estate professionals create, manage, and optimize their content for maximum impact and engagement.</p>
+        <p>Trusted by thousands of educators and real estate professionals worldwide.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Solutions</h4>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showDashboard('similarity')">Content Similarity Search</a></li>
+          <li><a href="#" onclick="showDashboard('tagging')">AI Auto-tagging</a></li>
+          <li><a href="#">Property Description Generator</a></li>
+          <li><a href="#">Course Content Optimizer</a></li>
+          <li><a href="#">Competitive Analysis</a></li>
+          <li><a href="#">Market Intelligence</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Industries</h4>
+        <ul class="footer-links">
+          <li><a href="#">Real Estate Agencies</a></li>
+          <li><a href="#">Property Management</a></li>
+          <li><a href="#">Online Education</a></li>
+          <li><a href="#">Course Creators</a></li>
+          <li><a href="#">Educational Institutions</a></li>
+          <li><a href="#">E-learning Platforms</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul class="footer-links">
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">API Reference</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Best Practices</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="social-links">
+        <a href="#" class="social-link">📧</a>
+        <a href="#" class="social-link">💼</a>
+        <a href="#" class="social-link">🐦</a>
+        <a href="#" class="social-link">📘</a>
+        <a href="#" class="social-link">📸</a>
+      </div>
+      <p>&copy; 2024 Turtil. All rights reserved. | Privacy Policy | Terms of Service | Cookie Policy</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+
+    // Show home function
+    function showHome() {
+      document.getElementById('hero').style.display = 'flex';
+      document.querySelector('.process-flow').style.display = 'block';
+      document.querySelector('.challenge').style.display = 'block';
+      document.querySelector('.features').style.display = 'block';
+      document.querySelector('.stats').style.display = 'block';
+      document.getElementById('dashboard').classList.remove('active');
+      
+      // Close mobile menu if open
+      document.getElementById('navLinks').classList.remove('active');
+    }
+
+    // Debounce function
+    function debounce(func, delay) {
+      let timeoutId;
+      return function (...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => func.apply(this, args), delay);
+      };
+    }
+
+    // Show dashboard function
+    function showDashboard(tool = null) {
+      document.getElementById('hero').style.display = 'none';
+      document.querySelector('.process-flow').style.display = 'none';
+      document.querySelector('.challenge').style.display = 'none';
+      // Hide all features sections
+      document.querySelectorAll('.features').forEach(el => el.style.display = 'none');
+      document.querySelector('.stats').style.display = 'none';
+      document.getElementById('dashboard').classList.add('active');
+      
+      // Close mobile menu if open
+      document.getElementById('navLinks').classList.remove('active');
+      
+      if (tool === 'similarity') {
+        document.getElementById('title').focus();
+      } else if (tool === 'tagging') {
+        document.getElementById('tag-text').focus();
+      }
+    }
+
+    // Similarity checker with debounced input
+    const debouncedSimilarityCheck = debounce(async function() {
+      const title = document.getElementById('title').value.trim();
+      const body = document.getElementById('body').value.trim();
+      
+      if (!title || !body) return;
+      
+      await checkSimilarity();
+    }, 600);
+
+    // Tag generator with debounced input
+    const debouncedTagGeneration = debounce(async function() {
+      const text = document.getElementById('tag-text').value.trim();
+      
+      if (!text) return;
+      
+      await generateTags();
+    }, 600);
+
+    // Add event listeners for auto-processing
+    document.getElementById('title').addEventListener('input', debouncedSimilarityCheck);
+    document.getElementById('body').addEventListener('input', debouncedSimilarityCheck);
+    document.getElementById('tag-text').addEventListener('input', debouncedTagGeneration);
+
+    async function checkSimilarity() {
+      const titleEl = document.getElementById('title');
+      const bodyEl = document.getElementById('body');
+      const btnEl = document.getElementById('similarity-btn');
+      const loadingEl = document.getElementById('similarity-loading');
+      const resultEl = document.getElementById('similarity-result');
+
+      const title = titleEl.value.trim();
+      const body = bodyEl.value.trim();
+
+      if (!title || !body) {
+        alert('Please enter both title and body content.');
+        return;
+      }
+
+      // Show loading state
+      btnEl.disabled = true;
+      loadingEl.classList.add('active');
+      resultEl.classList.remove('active');
+
+      try {
+        const response = await fetch('/similarity/check-duplicate', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            post_title: title,
+            post_body: body
+          })
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        
+        // Display formatted JSON result
+        resultEl.textContent = JSON.stringify(data, null, 2);
+        resultEl.classList.add('active');
+        
+      } catch (error) {
+        console.error('Error checking similarity:', error);
+        resultEl.textContent = `Error: ${error.message}`;
+        resultEl.classList.add('active');
+      } finally {
+        // Hide loading state
+        btnEl.disabled = false;
+        loadingEl.classList.remove('active');
+      }
+    }
+
+    async function generateTags() {
+      const textEl = document.getElementById('tag-text');
+      const btnEl = document.getElementById('tags-btn');
+      const loadingEl = document.getElementById('tags-loading');
+      const resultEl = document.getElementById('tags-result');
+
+      const text = textEl.value.trim();
+
+      if (!text) {
+        alert('Please enter content to generate tags.');
+        return;
+      }
+
+      // Show loading state
+      btnEl.disabled = true;
+      loadingEl.classList.add('active');
+      resultEl.classList.remove('active');
+
+      try {
+        const response = await fetch('/tags/generate-tags', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            text: text
+          })
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        
+        // Display formatted JSON result
+        resultEl.textContent = JSON.stringify(data, null, 2);
+        resultEl.classList.add('active');
+        
+      } catch (error) {
+        console.error('Error generating tags:', error);
+        resultEl.textContent = `Error: ${error.message}`;
+        resultEl.classList.add('active');
+      } finally {
+        // Hide loading state
+        btnEl.disabled = false;
+        loadingEl.classList.remove('active');
+      }
+    }
+
+    // Add smooth scrolling and enhanced interactions
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add some interactive effects
+      const cards = document.querySelectorAll('.tool-card');
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-5px)';
+          this.style.boxShadow = '0 20px 40px rgba(0, 255, 0, 0.1)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+          this.style.boxShadow = 'none';
+        });
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!event.target.closest('.dropdown')) {
+          document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+            dropdown.style.opacity = '0';
+            dropdown.style.visibility = 'hidden';
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

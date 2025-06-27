@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Similarity & Tag Generator</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    textarea, input, button { width: 100%; margin-top: 10px; padding: 10px; }
+    pre { background: #f0f0f0; padding: 10px; white-space: pre-wrap; }
+    h2 { margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <h1>🧠 Similarity Checker & Tag Generator</h1>
+
+  <!-- 🔍 Similarity Form -->
+  <h2>🔍 Check Similarity</h2>
+  <input type="text" id="title" placeholder="Post Title" required>
+  <textarea id="body" rows="4" placeholder="Post Body" required></textarea>
+  <button onclick="checkSimilarity()">Check Similarity</button>
+  <pre id="similarity-result"></pre>
+
+  <!-- 🏷️ Tag Generator -->
+  <h2>🏷️ Generate Tags</h2>
+  <textarea id="tag-text" rows="4" placeholder="Enter your post to generate tags..." required></textarea>
+  <button onclick="generateTags()">Generate Tags</button>
+  <pre id="tags-result"></pre>
+
+  <script>
+    async function checkSimilarity() {
+      const res = await fetch("/similarity/check-duplicate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          post_title: document.getElementById("title").value,
+          post_body: document.getElementById("body").value
+        })
+      });
+      const data = await res.json();
+      document.getElementById("similarity-result").innerText = JSON.stringify(data, null, 2);
+    }
+
+    async function generateTags() {
+      const res = await fetch("/tags/generate-tags", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          text: document.getElementById("tag-text").value
+        })
+      });
+      const data = await res.json();
+      document.getElementById("tags-result").innerText = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>

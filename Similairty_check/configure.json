@@ -1,0 +1,6 @@
+{
+  "POSTS_PATH": "Similairty_check/data/cleaned_posts.json",
+  "MODEL_PATH": "Similairty_check/models/all-MiniLM-L6-v2",
+  "SIMILARITY_THRESHOLD": 0.8,
+  "TOP_K": 10
+}

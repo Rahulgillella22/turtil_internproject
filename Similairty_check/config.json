@@ -1,0 +1,6 @@
+{
+  "Min tag score": 4.0,
+  "Max tag count": 6,
+  "SIMILARITY_THRESHOLD": 0.8,
+  "TOP_K": 10
+}

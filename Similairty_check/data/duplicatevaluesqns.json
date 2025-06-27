@@ -1,0 +1,202 @@
+[
+  {
+    "post_id": "post_199",
+    "user_id": "user_232",
+    "post_title": "Find Pair Sum in Array",
+    "post_body": "Given an array of integers, check if any two numbers sum to a target value using hashing.",
+    "tags": ["array", "hashmap", "pair-sum"],
+    "is_duplicate": true,
+    "duplicate_of": "post_1",
+    "similarity_score": 0.92
+  },
+  {
+    "post_id": "post_200",
+    "user_id": "user_232",
+    "post_title": "Two Number Sum Algorithm",
+    "post_body": "Efficient solution to find if two elements in an array equal the target sum.",
+    "tags": ["algorithm", "sum", "coding"],
+    "is_duplicate": true,
+    "duplicate_of": "post_1",
+    "similarity_score": 0.88
+  },
+  {
+    "post_id": "post_201",
+    "user_id": "user_232",
+    "post_title": "Stock Profit Maximization",
+    "post_body": "How to calculate maximum profit from daily stock price fluctuations?",
+    "tags": ["stocks", "profit", "time-series"],
+    "is_duplicate": true,
+    "duplicate_of": "post_2",
+    "similarity_score": 0.85
+  },
+  {
+    "post_id": "post_202",
+    "user_id": "user_232",
+    "post_title": "Detecting Duplicate Numbers",
+    "post_body": "Algorithm to identify the repeated number in an array of size n with elements 1 to n-1.",
+    "tags": ["duplicates", "cycle-detection", "arrays"],
+    "is_duplicate": true,
+    "duplicate_of": "post_3",
+    "similarity_score": 0.91
+  },
+  {
+    "post_id": "post_203",
+    "user_id": "user_232",
+    "post_title": "Array Product Calculation",
+    "post_body": "Compute product of all array elements except current index without division.",
+    "tags": ["prefix-product", "arrays", "leetcode"],
+    "is_duplicate": true,
+    "duplicate_of": "post_4",
+    "similarity_score": 0.89
+  },
+  {
+    "post_id": "post_204",
+    "user_id": "user_232",
+    "post_title": "Kadane's Algorithm Explained",
+    "post_body": "Finding the contiguous subarray with maximum sum using dynamic programming.",
+    "tags": ["subarray", "kadane", "maximum-sum"],
+    "is_duplicate": true,
+    "duplicate_of": "post_5",
+    "similarity_score": 0.87
+  },
+  {
+    "post_id": "post_205",
+    "user_id": "user_232",
+    "post_title": "Minimum in Rotated Array",
+    "post_body": "How to find the smallest element in a rotated sorted array efficiently?",
+    "tags": ["binary-search", "rotated-array", "minimum"],
+    "is_duplicate": true,
+    "duplicate_of": "post_7",
+    "similarity_score": 0.93
+  },
+  {
+    "post_id": "post_206",
+    "user_id": "user_232",
+    "post_title": "Triplet Sum to Zero",
+    "post_body": "Find all unique triplets in the array that sum to 0 with O(n²) solution.",
+    "tags": ["two-pointer", "triplets", "sum-zero"],
+    "is_duplicate": true,
+    "duplicate_of": "post_9",
+    "similarity_score": 0.90
+  },
+  {
+    "post_id": "post_207",
+    "user_id": "user_232",
+    "post_title": "Water Container Problem",
+    "post_body": "Calculate maximum water that can be contained between vertical lines using two pointers.",
+    "tags": ["two-pointer", "container", "optimization"],
+    "is_duplicate": true,
+    "duplicate_of": "post_10",
+    "similarity_score": 0.86
+  },
+  {
+    "post_id": "post_208",
+    "user_id": "user_232",
+    "post_title": "Rainwater Trapping Solution",
+    "post_body": "Compute how much rainwater can be trapped between elevation bars using dynamic programming.",
+    "tags": ["dynamic-programming", "rainwater", "stack"],
+    "is_duplicate": true,
+    "duplicate_of": "post_12",
+    "similarity_score": 0.94
+  },
+  {
+    "post_id": "post_209",
+    "user_id": "user_232",
+    "post_title": "Interval Merging Technique",
+    "post_body": "Algorithm to combine all overlapping intervals in a list of time ranges.",
+    "tags": ["sorting", "intervals", "merging"],
+    "is_duplicate": true,
+    "duplicate_of": "post_14",
+    "similarity_score": 0.88
+  },
+  {
+    "post_id": "post_210",
+    "user_id": "user_232",
+    "post_title": "Zero Matrix Algorithm",
+    "post_body": "In-place method to set entire row and column to zero if an element is zero.",
+    "tags": ["matrix", "in-place", "optimization"],
+    "is_duplicate": true,
+    "duplicate_of": "post_16",
+    "similarity_score": 0.91
+  },
+  {
+    "post_id": "post_211",
+    "user_id": "user_232",
+    "post_title": "Longest Unique Character Substring",
+    "post_body": "Sliding window technique to find longest substring without repeating characters.",
+    "tags": ["sliding-window", "substring", "hashset"],
+    "is_duplicate": true,
+    "duplicate_of": "post_20",
+    "similarity_score": 0.89
+  },
+  {
+    "post_id": "post_212",
+    "user_id": "user_232",
+    "post_title": "Anagram Detection",
+    "post_body": "Check if two strings are anagrams using frequency counting in O(n) time.",
+    "tags": ["hashmap", "anagram", "strings"],
+    "is_duplicate": true,
+    "duplicate_of": "post_23",
+    "similarity_score": 0.93
+  },
+  {
+    "post_id": "post_213",
+    "user_id": "user_232",
+    "post_title": "Longest Palindrome Substring",
+    "post_body": "Expand around center approach to find the longest palindromic substring.",
+    "tags": ["palindrome", "substring", "center-expansion"],
+    "is_duplicate": true,
+    "duplicate_of": "post_27",
+    "similarity_score": 0.90
+  },
+  {
+    "post_id": "post_214",
+    "user_id": "user_232",
+    "post_title": "Linked List Reversal",
+    "post_body": "Iterative and recursive methods to reverse a singly linked list.",
+    "tags": ["linked-list", "reverse", "pointers"],
+    "is_duplicate": true,
+    "duplicate_of": "post_30",
+    "similarity_score": 0.95
+  },
+  {
+    "post_id": "post_215",
+    "user_id": "user_232",
+    "post_title": "Merging Two Sorted Linked Lists",
+    "post_body": "How to combine two sorted linked lists into one sorted list efficiently.",
+    "tags": ["linked-list", "merge", "recursion"],
+    "is_duplicate": true,
+    "duplicate_of": "post_32",
+    "similarity_score": 0.87
+  },
+  {
+    "post_id": "post_216",
+    "user_id": "user_232",
+    "post_title": "Tree Height Calculation",
+    "post_body": "Recursive DFS approach to find maximum depth of a binary tree.",
+    "tags": ["binary-tree", "depth", "recursion"],
+    "is_duplicate": true,
+    "duplicate_of": "post_42",
+    "similarity_score": 0.92
+  },
+  {
+    "post_id": "post_217",
+    "user_id": "user_232",
+    "post_title": "Validate Binary Search Tree",
+    "post_body": "Check if a binary tree satisfies BST properties using inorder traversal.",
+    "tags": ["bst", "validation", "inorder"],
+    "is_duplicate": true,
+    "duplicate_of": "post_50",
+    "similarity_score": 0.94
+  },
+  {
+    "post_id": "post_218",
+    "user_id": "user_232",
+    "post_title": "Matrix Spiral Traversal",
+    "post_body": "Algorithm to traverse a 2D matrix in spiral order with O(mn) time.",
+    "tags": ["matrix", "simulation", "spiral-order"],
+    "is_duplicate": true,
+    "duplicate_of": "post_17",
+    "similarity_score": 0.89
+  }
+]

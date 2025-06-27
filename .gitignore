@@ -1,0 +1,25 @@
+# Ignore virtual environment
+venv/
+
+# Ignore all Python cache folders
+__pycache__/
+**/__pycache__/
+
+# Ignore all 'models' folders anywhere in the project
+**/models/
+
+# Ignore all binary model files
+*.bin
+*.pt
+*.h5
+*.onnx
+*.safetensors
+
+# Optional: ignore common Python artifacts (safe and clean)
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+.env
+.DS_Store

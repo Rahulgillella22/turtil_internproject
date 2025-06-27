@@ -1,0 +1,3372 @@
+[
+  {
+    "post_id": "post_1",
+    "user_id": "user_232",
+    "post_title": "two sum - pair with given sum",
+    "post_body": "given an array `arr` of `n` integers and a target value the task is to find whether there is a pair of elements in the array whose sum is equal to the target.",
+    "tags": [
+      "sum",
+      "2sum",
+      "array",
+      "hash"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_2",
+    "user_id": "user_232",
+    "post_title": "best time to buy and sell stock",
+    "post_body": "given an array `prices` where `pricesi` is the stock price on the `i-th` day maximize profit by buying low and selling high.",
+    "tags": [
+      "array",
+      "stock",
+      "profit",
+      "sliding-window"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_3",
+    "user_id": "user_232",
+    "post_title": "find duplicates in an array",
+    "post_body": "given an array `arr` of size `n` with integers from `1` to `n-1` find the duplicate number.",
+    "tags": [
+      "array",
+      "duplicate",
+      "hash",
+      "cycle-detection"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_4",
+    "user_id": "user_232",
+    "post_title": "product of array except self",
+    "post_body": "return an array where each element is the product of all elements except `numsi`.",
+    "tags": [
+      "array",
+      "prefix-sum",
+      "product",
+      "leetcode"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_5",
+    "user_id": "user_232",
+    "post_title": "maximum subarray kadanes algorithm",
+    "post_body": "find the contiguous subarray with the largest sum.",
+    "tags": [
+      "array",
+      "kadane",
+      "dynamic-programming",
+      "subarray"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_6",
+    "user_id": "user_232",
+    "post_title": "maximum product subarray",
+    "post_body": "find the contiguous subarray with the largest product.",
+    "tags": [
+      "array",
+      "dynamic-programming",
+      "subarray",
+      "product"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_7",
+    "user_id": "user_232",
+    "post_title": "find minimum in rotated sorted array",
+    "post_body": "given a rotated sorted array return its minimum element.",
+    "tags": [
+      "array",
+      "binary-search",
+      "rotated-sorted",
+      "minimum"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_8",
+    "user_id": "user_232",
+    "post_title": "search in rotated sorted array",
+    "post_body": "search for a `target` in a rotated sorted array.",
+    "tags": [
+      "array",
+      "binary-search",
+      "rotated-sorted",
+      "search"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_9",
+    "user_id": "user_232",
+    "post_title": "3 sum triplets with zero sum",
+    "post_body": "find all triplets in `nums` that sum to `0`.",
+    "tags": [
+      "array",
+      "two-pointer",
+      "3sum",
+      "leetcode"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_10",
+    "user_id": "user_232",
+    "post_title": "container with most water",
+    "post_body": "find two lines that form the largest water container.",
+    "tags": [
+      "array",
+      "two-pointer",
+      "greedy",
+      "container"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_11",
+    "user_id": "user_232",
+    "post_title": "factorial of a large number",
+    "post_body": "compute factorial of `n` and return it as a string.",
+    "tags": [
+      "array",
+      "factorial",
+      "large-number",
+      "math"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_12",
+    "user_id": "user_232",
+    "post_title": "trapping rain water",
+    "post_body": "compute how much rainwater can be trapped between bars.",
+    "tags": [
+      "array",
+      "two-pointer",
+      "dynamic-programming",
+      "stack"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_13",
+    "user_id": "user_232",
+    "post_title": "chocolate distribution problem",
+    "post_body": "distribute chocolate packets to minimize the difference between max and min.",
+    "tags": [
+      "array",
+      "sorting",
+      "sliding-window",
+      "greedy"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_14",
+    "user_id": "user_232",
+    "post_title": "merge intervals",
+    "post_body": "merge all overlapping intervals.",
+    "tags": [
+      "array",
+      "sorting",
+      "intervals",
+      "merge"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_15",
+    "user_id": "user_232",
+    "post_title": "non-overlapping intervals",
+    "post_body": "remove the minimum number of intervals to make all non-overlapping.",
+    "tags": [
+      "array",
+      "sorting",
+      "greedy",
+      "intervals"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_16",
+    "user_id": "user_232",
+    "post_title": "set matrix zeroes",
+    "post_body": "if an element is `0` set its entire row and column to `0`.",
+    "tags": [
+      "matrix",
+      "hash",
+      "in-place"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_17",
+    "user_id": "user_232",
+    "post_title": "spiral matrix",
+    "post_body": "return all elements of the matrix in spiral order.",
+    "tags": [
+      "matrix",
+      "simulation",
+      "spiral"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_18",
+    "user_id": "user_232",
+    "post_title": "transpose of a matrix",
+    "post_body": "return the transpose of the given matrix.",
+    "tags": [
+      "matrix",
+      "transpose",
+      "in-place"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_19",
+    "user_id": "user_232",
+    "post_title": "word search",
+    "post_body": "given a 2d board of characters check if the word exists.",
+    "tags": [
+      "matrix",
+      "backtracking",
+      "dfs"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_20",
+    "user_id": "user_232",
+    "post_title": "longest substring without repeating characters",
+    "post_body": "find the length of the longest substring without repeating characters.",
+    "tags": [
+      "string",
+      "sliding-window",
+      "hash"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_21",
+    "user_id": "user_232",
+    "post_title": "longest repeating character replacement",
+    "post_body": "find the longest substring with at most `k` replacements.",
+    "tags": [
+      "string",
+      "sliding-window",
+      "greedy"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_22",
+    "user_id": "user_232",
+    "post_title": "smallest window containing all characters",
+    "post_body": "find the smallest substring containing all characters of another string.",
+    "tags": [
+      "string",
+      "sliding-window",
+      "hash"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_23",
+    "user_id": "user_232",
+    "post_title": "check for anagram",
+    "post_body": "check if two strings are anagrams.",
+    "tags": [
+      "string",
+      "anagram",
+      "hash"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_24",
+    "user_id": "user_232",
+    "post_title": "print all anagrams together",
+    "post_body": "group anagrams from a list of words.",
+    "tags": [
+      "string",
+      "anagram",
+      "hash",
+      "sorting"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_25",
+    "user_id": "user_232",
+    "post_title": "check balanced parentheses",
+    "post_body": "check if a string of parentheses is balanced.",
+    "tags": [
+      "string",
+      "stack",
+      "parentheses"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_26",
+    "user_id": "user_232",
+    "post_title": "sentence palindrome",
+    "post_body": "check if a sentence is a palindrome.",
+    "tags": [
+      "string",
+      "palindrome",
+      "two-pointer"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_27",
+    "user_id": "user_232",
+    "post_title": "longest palindromic substring",
+    "post_body": "find the longest substring that is a palindrome.",
+    "tags": [
+      "string",
+      "palindrome",
+      "dynamic-programming"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_28",
+    "user_id": "user_232",
+    "post_title": "palindromic substrings",
+    "post_body": "count all palindromic substrings in a string.",
+    "tags": [
+      "string",
+      "palindrome",
+      "dynamic-programming"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_29",
+    "user_id": "user_232",
+    "post_title": "longest common prefix",
+    "post_body": "find the longest common prefix among an array of strings.",
+    "tags": [
+      "string",
+      "trie",
+      "binary-search"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_30",
+    "user_id": "user_232",
+    "post_title": "reverse a linked list",
+    "post_body": "reverse a singly linked list.",
+    "tags": [
+      "linked-list",
+      "reverse",
+      "iterative",
+      "recursive"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_31",
+    "user_id": "user_232",
+    "post_title": "detect cycle in a linked list",
+    "post_body": "check if a linked list has a cycle.",
+    "tags": [
+      "linked-list",
+      "cycle",
+      "two-pointer"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_32",
+    "user_id": "user_232",
+    "post_title": "merge two sorted lists",
+    "post_body": "merge two sorted linked lists into one sorted list.",
+    "tags": [
+      "linked-list",
+      "merge",
+      "recursion"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_33",
+    "user_id": "user_232",
+    "post_title": "merge k sorted lists",
+    "post_body": "merge `k` sorted linked lists into one sorted list.",
+    "tags": [
+      "linked-list",
+      "heap",
+      "divide-conquer"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_34",
+    "user_id": "user_232",
+    "post_title": "remove nth node from end of list",
+    "post_body": "remove the `n-th` node from the end of the list.",
+    "tags": [
+      "linked-list",
+      "two-pointer",
+      "dummy-node"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_35",
+    "user_id": "user_232",
+    "post_title": "reorder list",
+    "post_body": "reorder a linked list in `l0 ln l1 ln-1 ...` order.",
+    "tags": [
+      "linked-list",
+      "reverse",
+      "two-pointer"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_36",
+    "user_id": "user_232",
+    "post_title": "add 1 to a number represented as linked list",
+    "post_body": "add `1` to a number stored as a linked list.",
+    "tags": [
+      "linked-list",
+      "recursion",
+      "reverse"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_37",
+    "user_id": "user_232",
+    "post_title": "middle of a linked list",
+    "post_body": "find the middle node of a linked list.",
+    "tags": [
+      "linked-list",
+      "two-pointer",
+      "slow-fast"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_38",
+    "user_id": "user_232",
+    "post_title": "delete last occurrence from linked list",
+    "post_body": "delete the last occurrence of a given key in the list.",
+    "tags": [
+      "linked-list",
+      "traversal",
+      "pointer"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_39",
+    "user_id": "user_232",
+    "post_title": "intersection of two linked lists",
+    "post_body": "find the node where two linked lists intersect.",
+    "tags": [
+      "linked-list",
+      "two-pointer",
+      "length-difference"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_40",
+    "user_id": "user_232",
+    "post_title": "infix to postfix conversion",
+    "post_body": "convert an infix expression to postfix notation.",
+    "tags": [
+      "stack",
+      "expression-parsing",
+      "shunting-yard"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_41",
+    "user_id": "user_232",
+    "post_title": "next greater element",
+    "post_body": "find the next greater element for every array element.",
+    "tags": [
+      "stack",
+      "monotonic",
+      "array"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_42",
+    "user_id": "user_232",
+    "post_title": "maximum depth of binary tree",
+    "post_body": "find the height of a binary tree.",
+    "tags": [
+      "tree",
+      "dfs",
+      "recursion"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_43",
+    "user_id": "user_232",
+    "post_title": "check if two trees have same structure",
+    "post_body": "check if two binary trees are identical.",
+    "tags": [
+      "tree",
+      "dfs",
+      "recursion"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_44",
+    "user_id": "user_232",
+    "post_title": "invert/flip binary tree",
+    "post_body": "invert a binary tree mirror image.",
+    "tags": [
+      "tree",
+      "dfs",
+      "recursion"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_45",
+    "user_id": "user_232",
+    "post_title": "binary tree maximum path sum",
+    "post_body": "find the maximum path sum in a binary tree.",
+    "tags": [
+      "tree",
+      "dynamic-programming",
+      "dfs"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_46",
+    "user_id": "user_232",
+    "post_title": "binary tree level order traversal",
+    "post_body": "return the level-order traversal of a binary tree.",
+    "tags": [
+      "tree",
+      "bfs",
+      "queue"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_47",
+    "user_id": "user_232",
+    "post_title": "serialize and deserialize binary tree",
+    "post_body": "convert a binary tree to a string and reconstruct it.",
+    "tags": [
+      "tree",
+      "serialization",
+      "dfs"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_48",
+    "user_id": "user_232",
+    "post_title": "subtree of another tree",
+    "post_body": "check if one tree is a subtree of another.",
+    "tags": [
+      "tree",
+      "dfs",
+      "recursion"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_49",
+    "user_id": "user_232",
+    "post_title": "construct binary tree from preorder and inorder traversal",
+    "post_body": "build a binary tree from given traversals.",
+    "tags": [
+      "tree",
+      "dfs",
+      "divide-conquer"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_50",
+    "user_id": "user_232",
+    "post_title": "validate binary search tree bst",
+    "post_body": "check if a binary tree is a valid bst.",
+    "tags": [
+      "tree",
+      "dfs",
+      "inorder"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_51",
+    "user_id": "user_232",
+    "post_title": "kth smallest element in a bst",
+    "post_body": "find the `k-th` smallest element in a bst.",
+    "tags": [
+      "tree",
+      "dfs",
+      "inorder"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_52",
+    "user_id": "user_232",
+    "post_title": "lowest common ancestor lca of bst",
+    "post_body": "find the lca of two nodes in a bst.",
+    "tags": [
+      "tree",
+      "dfs",
+      "bst"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_53",
+    "user_id": "user_232",
+    "post_title": "implement trie prefix tree",
+    "post_body": "implement a trie data structure.",
+    "tags": [
+      "tree",
+      "trie",
+      "prefix"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_54",
+    "user_id": "user_232",
+    "post_title": "add and search word trie wildcard",
+    "post_body": "design a data structure that supports adding and searching words with wildcards.",
+    "tags": [
+      "tree",
+      "trie",
+      "dfs"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_55",
+    "user_id": "user_232",
+    "post_title": "top k frequent elements",
+    "post_body": "find the `k` most frequent elements in an array.",
+    "tags": [
+      "heap",
+      "hash",
+      "priority-queue"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_56",
+    "user_id": "user_232",
+    "post_title": "find median from data stream",
+    "post_body": "design a data structure to find the median of streaming data.",
+    "tags": [
+      "heap",
+      "two-heaps",
+      "median"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_57",
+    "user_id": "user_232",
+    "post_title": "largest triplet product in a stream",
+    "post_body": "for every new number in a stream find the largest triplet product.",
+    "tags": [
+      "heap",
+      "priority-queue",
+      "stream"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_58",
+    "user_id": "user_232",
+    "post_title": "connect n ropes with minimum cost",
+    "post_body": "connect ropes into one with minimum cost.",
+    "tags": [
+      "heap",
+      "greedy",
+      "priority-queue"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_59",
+    "user_id": "user_232",
+    "post_title": "clone graph",
+    "post_body": "deep clone an undirected graph.",
+    "tags": [
+      "graph",
+      "dfs",
+      "hash"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_60",
+    "user_id": "user_232",
+    "post_title": "course schedule topological sort",
+    "post_body": "check if all courses can be finished given prerequisites.",
+    "tags": [
+      "graph",
+      "topological-sort",
+      "dfs"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_61",
+    "user_id": "user_232",
+    "post_title": "pacific atlantic water flow",
+    "post_body": "find cells where water can flow to both oceans.",
+    "tags": [
+      "graph",
+      "dfs",
+      "matrix"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_62",
+    "user_id": "user_232",
+    "post_title": "number of islands",
+    "post_body": "count the number of islands in a 2d grid.",
+    "tags": [
+      "graph",
+      "dfs",
+      "matrix"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_63",
+    "user_id": "user_232",
+    "post_title": "longest consecutive sequence",
+    "post_body": "find the longest consecutive sequence in an unsorted array.",
+    "tags": [
+      "graph",
+      "union-find",
+      "hash"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_64",
+    "user_id": "user_232",
+    "post_title": "snake and ladder problem",
+    "post_body": "find the minimum steps to reach the end in a snake and ladder game.",
+    "tags": [
+      "graph",
+      "bfs",
+      "shortest-path"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_65",
+    "user_id": "user_232",
+    "post_title": "detect cycle in a directed graph",
+    "post_body": "check if a directed graph contains a cycle.",
+    "tags": [
+      "graph",
+      "dfs",
+      "cycle-detection"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_66",
+    "user_id": "user_232",
+    "post_title": "bridges in a graph",
+    "post_body": "find all critical connections bridges in a graph.",
+    "tags": [
+      "graph",
+      "dfs",
+      "tarjan"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_67",
+    "user_id": "user_232",
+    "post_title": "check if graph is bipartite",
+    "post_body": "check if a graph can be colored with two colors.",
+    "tags": [
+      "graph",
+      "bfs",
+      "coloring"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_68",
+    "user_id": "user_232",
+    "post_title": "largest region in boolean matrix",
+    "post_body": "find the size of the largest connected `1`s region.",
+    "tags": [
+      "graph",
+      "dfs",
+      "matrix"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_69",
+    "user_id": "user_232",
+    "post_title": "flood fill algorithm",
+    "post_body": "perform flood fill on an image like ms paint.",
+    "tags": [
+      "graph",
+      "dfs",
+      "matrix"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_70",
+    "user_id": "user_232",
+    "post_title": "strongly connected components kosarajus algo",
+    "post_body": "find all strongly connected components in a directed graph.",
+    "tags": [
+      "graph",
+      "dfs",
+      "kosaraju"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_71",
+    "user_id": "user_232",
+    "post_title": "topological sorting",
+    "post_body": "perform topological sorting on a directed acyclic graph dag.",
+    "tags": [
+      "graph",
+      "dfs",
+      "kahn"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_72",
+    "user_id": "user_232",
+    "post_title": "count ways to reach the n-th stair",
+    "post_body": "count ways to climb `n` stairs 1 or 2 steps at a time.",
+    "tags": [
+      "dp",
+      "fibonacci",
+      "recursion"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_73",
+    "user_id": "user_232",
+    "post_title": "coin change",
+    "post_body": "find the minimum number of coins needed to make a target amount.",
+    "tags": [
+      "dp",
+      "unbounded-knapsack",
+      "coin-change"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_74",
+    "user_id": "user_232",
+    "post_title": "0/1 knapsack problem",
+    "post_body": "maximize value in a knapsack with given weight capacity.",
+    "tags": [
+      "dp",
+      "knapsack",
+      "memoization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_75",
+    "user_id": "user_232",
+    "post_title": "longest increasing subsequence lis",
+    "post_body": "find the length of the longest increasing subsequence.",
+    "tags": [
+      "dp",
+      "binary-search",
+      "patience-sort"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_76",
+    "user_id": "user_232",
+    "post_title": "longest common subsequence lcs",
+    "post_body": "find the length of the lcs of two strings.",
+    "tags": [
+      "dp",
+      "string",
+      "memoization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_77",
+    "user_id": "user_232",
+    "post_title": "word break problem",
+    "post_body": "check if a string can be segmented into dictionary words.",
+    "tags": [
+      "dp",
+      "memoization",
+      "trie"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_78",
+    "user_id": "user_232",
+    "post_title": "dice throw problem",
+    "post_body": "find the number of ways to get a sum `x` with `n` dice.",
+    "tags": [
+      "dp",
+      "combinatorics",
+      "memoization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_79",
+    "user_id": "user_232",
+    "post_title": "egg dropping puzzle",
+    "post_body": "find the minimum number of attempts to find the critical floor.",
+    "tags": [
+      "dp",
+      "memoization",
+      "binary-search"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_80",
+    "user_id": "user_232",
+    "post_title": "matrix chain multiplication",
+    "post_body": "find the optimal way to multiply matrices.",
+    "tags": [
+      "dp",
+      "memoization",
+      "divide-conquer"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_81",
+    "user_id": "user_232",
+    "post_title": "combination sum",
+    "post_body": "find all unique combinations that sum to a target.",
+    "tags": [
+      "dp",
+      "backtracking",
+      "recursion"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_82",
+    "user_id": "user_232",
+    "post_title": "subset sum problem",
+    "post_body": "check if a subset of numbers sums to a target.",
+    "tags": [
+      "dp",
+      "knapsack",
+      "recursion"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_83",
+    "user_id": "user_232",
+    "post_title": "maximum sum of non-adjacent houses",
+    "post_body": "find the maximum sum of stolen money without alerting police.",
+    "tags": [
+      "dp",
+      "memoization",
+      "house-robber"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_84",
+    "user_id": "user_232",
+    "post_title": "count possible decodings of a digit sequence",
+    "post_body": "count ways to decode a string of digits `'a'=1 'b'=2 ...`.",
+    "tags": [
+      "dp",
+      "memoization",
+      "string"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_85",
+    "user_id": "user_232",
+    "post_title": "unique paths in a grid with obstacles",
+    "post_body": "find the number of unique paths in a grid with obstacles.",
+    "tags": [
+      "dp",
+      "memoization",
+      "matrix"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_86",
+    "user_id": "user_232",
+    "post_title": "jump game",
+    "post_body": "check if you can reach the end of an array from the start.",
+    "tags": [
+      "dp",
+      "greedy",
+      "memoization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_87",
+    "user_id": "user_232",
+    "post_title": "cutting a rod for maximum profit",
+    "post_body": "find the maximum profit by cutting and selling a rod.",
+    "tags": [
+      "dp",
+      "unbounded-knapsack",
+      "memoization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_88",
+    "user_id": "user_232",
+    "post_title": "maximum product cutting",
+    "post_body": "cut a rope into parts to maximize the product of lengths.",
+    "tags": [
+      "dp",
+      "memoization",
+      "greedy"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_89",
+    "user_id": "user_232",
+    "post_title": "count ways to cover a distance",
+    "post_body": "count ways to cover distance `n` using steps `1 2 or 3`.",
+    "tags": [
+      "dp",
+      "memoization",
+      "recursion"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_90",
+    "user_id": "user_232",
+    "post_title": "edit distance levenshtein distance",
+    "post_body": "find the minimum operations insert delete replace to convert `str1` to `str2`.",
+    "tags": [
+      "dp",
+      "string",
+      "memoization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_91",
+    "user_id": "user_232",
+    "post_title": "longest palindromic subsequence",
+    "post_body": "find the length of the longest palindromic subsequence.",
+    "tags": [
+      "dp",
+      "string",
+      "memoization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_92",
+    "user_id": "user_232",
+    "post_title": "number of 1 bits hamming weight",
+    "post_body": "count the number of `1` bits in an integer.",
+    "tags": [
+      "bit",
+      "hamming-weight",
+      "count"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_93",
+    "user_id": "user_232",
+    "post_title": "counting bits",
+    "post_body": "return an array where `ansi` is the number of `1`'s in `i`.",
+    "tags": [
+      "bit",
+      "dp",
+      "count"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_94",
+    "user_id": "user_232",
+    "post_title": "missing number",
+    "post_body": "find the missing number in `0 n` using xor.",
+    "tags": [
+      "bit",
+      "xor",
+      "math"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_95",
+    "user_id": "user_232",
+    "post_title": "reverse bits",
+    "post_body": "reverse the bits of a given 32-bit unsigned integer.",
+    "tags": [
+      "bit",
+      "reverse",
+      "shift"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_96",
+    "user_id": "user_232",
+    "post_title": "xor of all subsets of a set",
+    "post_body": "find xor of all possible subsets of a set.",
+    "tags": [
+      "bit",
+      "xor",
+      "subset"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_97",
+    "user_id": "user_232",
+    "post_title": "what is the difference between `==` and `is` in python",
+    "post_body": "i've seen both `==` and `is` being used in python. i know they both compare values but sometimes they behave differently. can someone explain the difference with examples",
+    "tags": [
+      "python",
+      "comparison",
+      "operators",
+      "identity"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_98",
+    "user_id": "user_232",
+    "post_title": "what causes nonetype is not iterable in python",
+    "post_body": "i'm getting a typeerror 'nonetype' object is not iterable when trying to loop through a function result. what does this error mean and how can i avoid it",
+    "tags": [
+      "python",
+      "none",
+      "error-handling",
+      "typeerror"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_99",
+    "user_id": "user_232",
+    "post_title": "what does unreachable code mean in java",
+    "post_body": "i received a compiler warning about unreachable code in java. what exactly does that mean and how do i fix it",
+    "tags": [
+      "java",
+      "compiler-errors",
+      "unreachable-code",
+      "syntax"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_100",
+    "user_id": "user_232",
+    "post_title": "why does javascript return `undefined` sometimes",
+    "post_body": "i'm new to javascript and sometimes when i log the result of a function i get `undefined`. why does that happen and how can i avoid it",
+    "tags": [
+      "javascript",
+      "undefined",
+      "functions",
+      "debugging"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_101",
+    "user_id": "user_232",
+    "post_title": "how do i fix a segmentation fault in c",
+    "post_body": "my c program compiles but when i run it i get a segmentation fault. what causes this and how can i find and fix the issue",
+    "tags": [
+      "c",
+      "segmentation-fault",
+      "pointers",
+      "debugging"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_102",
+    "user_id": "user_232",
+    "post_title": "what is the difference between `let` `const` and `var` in javascript",
+    "post_body": "can someone explain the difference between `let` `const` and `var` in javascript i get confused about when to use which one especially in loops and functions.",
+    "tags": [
+      "javascript",
+      "variables",
+      "let",
+      "const",
+      "var"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_103",
+    "user_id": "user_232",
+    "post_title": "how does garbage collection work in java",
+    "post_body": "i've heard that java handles memory automatically via garbage collection. can someone explain how garbage collection actually works and what developers should know about it",
+    "tags": [
+      "java",
+      "garbage-collection",
+      "memory-management"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_104",
+    "user_id": "user_232",
+    "post_title": "what is a nullpointerexception and how do i handle it",
+    "post_body": "i'm writing java code and keep encountering a nullpointerexception. what causes it and what are best practices to prevent or handle it",
+    "tags": [
+      "java",
+      "nullpointerexception",
+      "exceptions",
+      "null"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_105",
+    "user_id": "user_232",
+    "post_title": "what does the `static` keyword do in java",
+    "post_body": "i see the `static` keyword used in java for methods and variables but i'm not sure what it really means. could someone explain with a simple example",
+    "tags": [
+      "java",
+      "static",
+      "keywords",
+      "methods"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_106",
+    "user_id": "user_232",
+    "post_title": "what does undefined reference to `main` mean in c",
+    "post_body": "i'm trying to compile a simple c program but i get an undefined reference to `main` error. what does that mean and how do i fix it",
+    "tags": [
+      "c",
+      "compilation",
+      "main-function",
+      "errors"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_107",
+    "user_id": "user_232",
+    "post_title": "what is the difference between `deepcopy` and `copy` in python",
+    "post_body": "i'm confused between `copy.copy` and `copy.deepcopy` in python. when should i use each of them and how are they different",
+    "tags": [
+      "python",
+      "copy",
+      "deepcopy",
+      "memory-management"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_108",
+    "user_id": "user_232",
+    "post_title": "what are the lifecycle methods in react",
+    "post_body": "i'm new to react and trying to understand how lifecycle methods work in class components. can someone list and explain them with use cases",
+    "tags": [
+      "reactjs",
+      "lifecycle-methods",
+      "javascript",
+      "frontend"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_109",
+    "user_id": "user_232",
+    "post_title": "how do i resolve cannot read property of undefined in javascript",
+    "post_body": "i'm getting an error in my javascript app that says cannot read property of undefined. what causes this and how can i debug it",
+    "tags": [
+      "javascript",
+      "undefined",
+      "errors",
+      "debugging"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_110",
+    "user_id": "user_232",
+    "post_title": "how do environment variables work in node.js",
+    "post_body": "i keep hearing about using environment variables in node.js for configuration. how do i set and read them properly in my project",
+    "tags": [
+      "node.js",
+      "environment-variables",
+      "configuration",
+      "backend"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_111",
+    "user_id": "user_232",
+    "post_title": "what is the difference between `public` `private` and `protected` in java",
+    "post_body": "i'm learning object-oriented programming and confused about access modifiers in java. whats the difference between public private and protected",
+    "tags": [
+      "java",
+      "access-modifiers",
+      "oop",
+      "encapsulation"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_112",
+    "user_id": "user_232",
+    "post_title": "what is the use of virtual functions in c",
+    "post_body": "i'm learning c and saw examples using virtual functions. why are they used and how do they differ from regular functions",
+    "tags": [
+      "c++",
+      "virtual-functions",
+      "polymorphism",
+      "oop"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_113",
+    "user_id": "user_232",
+    "post_title": "why does python use indentation instead of braces",
+    "post_body": "in most languages like c or java we use braces to define blocks. why does python enforce indentation and how does it affect code structure",
+    "tags": [
+      "python",
+      "syntax",
+      "indentation",
+      "code-style"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_114",
+    "user_id": "user_232",
+    "post_title": "what is the difference between synchronous and asynchronous code",
+    "post_body": "i keep hearing the terms synchronous and asynchronous in javascript tutorials. can someone explain the difference with examples",
+    "tags": [
+      "javascript",
+      "asynchronous",
+      "synchronous",
+      "async-await"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_115",
+    "user_id": "user_232",
+    "post_title": "how do i center a div using css",
+    "post_body": "ive tried margin and flexbox but im still struggling to properly center a div in css both vertically and horizontally. what's the correct way",
+    "tags": [
+      "css",
+      "html",
+      "center",
+      "web-development"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_116",
+    "user_id": "user_232",
+    "post_title": "what is the purpose of the `__init__` method in python",
+    "post_body": "ive seen python classes using an `__init__` method. is it like a constructor what does it do and how is it used",
+    "tags": [
+      "python",
+      "classes",
+      "init",
+      "oop"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_117",
+    "user_id": "user_232",
+    "post_title": "what is the difference between `npm` and `npx`",
+    "post_body": "i often see commands using either `npm` or `npx` in tutorials. what's the difference between the two and when should i use one over the other",
+    "tags": [
+      "node.js",
+      "npm",
+      "npx",
+      "javascript"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_118",
+    "user_id": "user_232",
+    "post_title": "why does my css not apply to my html",
+    "post_body": "ive linked a css file in my html but the styles aren't applying. what are the common causes for this",
+    "tags": [
+      "css",
+      "html",
+      "styling",
+      "web"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_119",
+    "user_id": "user_232",
+    "post_title": "how do i use async/await with fetch in javascript",
+    "post_body": "im trying to fetch data from an api using async/await but im confused with how to handle promises and errors properly.",
+    "tags": [
+      "javascript",
+      "fetch",
+      "async-await",
+      "api"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_120",
+    "user_id": "user_232",
+    "post_title": "whats the difference between get and post methods",
+    "post_body": "ive seen get and post used in api requests but im unsure when to use each. can someone explain the difference",
+    "tags": [
+      "http",
+      "get",
+      "post",
+      "api"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_121",
+    "user_id": "user_232",
+    "post_title": "why is `nan` not equal to itself in javascript",
+    "post_body": "i noticed that `nan === nan` returns false. why is that the case and how do you check if a value is `nan` properly",
+    "tags": [
+      "javascript",
+      "nan",
+      "equality",
+      "weird-behavior"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_122",
+    "user_id": "user_232",
+    "post_title": "how do i use context in react",
+    "post_body": "i want to avoid prop drilling in my react app. how do i set up and use the context api effectively",
+    "tags": [
+      "reactjs",
+      "context",
+      "state-management",
+      "frontend"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_123",
+    "user_id": "user_232",
+    "post_title": "why does my python function return none",
+    "post_body": "i wrote a function in python but its returning `none` even though i expected a value. what could be wrong",
+    "tags": [
+      "python",
+      "return",
+      "functions",
+      "none"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_124",
+    "user_id": "user_232",
+    "post_title": "how do i install python packages using pip",
+    "post_body": "i need to install external libraries like `requests` for my python project. how do i use pip to install and manage packages",
+    "tags": [
+      "python",
+      "pip",
+      "installation",
+      "packages"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_125",
+    "user_id": "user_232",
+    "post_title": "what is the difference between sql and nosql databases",
+    "post_body": "im trying to choose between mongodb and postgresql. what are the main differences between sql and nosql databases",
+    "tags": [
+      "databases",
+      "sql",
+      "nosql",
+      "mongodb",
+      "postgresql"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_126",
+    "user_id": "user_232",
+    "post_title": "whats the difference between docker images and containers",
+    "post_body": "im learning docker and keep hearing about images and containers. how are they different and how do they work together",
+    "tags": [
+      "docker",
+      "containers",
+      "images",
+      "devops"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_127",
+    "user_id": "user_232",
+    "post_title": "what is the use of `super` in python",
+    "post_body": "i've come across the `super` function in python when using classes and inheritance. can someone explain what it does and when to use it",
+    "tags": [
+      "python",
+      "super",
+      "inheritance",
+      "oop"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_128",
+    "user_id": "user_232",
+    "post_title": "whats the difference between `map` `filter` and `reduce` in python",
+    "post_body": "ive seen examples using `map` `filter` and `reduce` in python. how do they differ and in what scenarios should i use each",
+    "tags": [
+      "python",
+      "functional-programming",
+      "map",
+      "filter",
+      "reduce"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_129",
+    "user_id": "user_232",
+    "post_title": "why do we use virtual environments in python",
+    "post_body": "tutorials often recommend using a virtual environment when developing python projects. why is that necessary",
+    "tags": [
+      "python",
+      "virtualenv",
+      "venv",
+      "environments"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_130",
+    "user_id": "user_232",
+    "post_title": "how do i deploy a flask app using gunicorn",
+    "post_body": "i built a small flask application. what are the steps to deploy it in production using gunicorn",
+    "tags": [
+      "flask",
+      "gunicorn",
+      "deployment",
+      "python"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_131",
+    "user_id": "user_232",
+    "post_title": "how does the `this` keyword work in javascript",
+    "post_body": "im confused about how `this` behaves in different javascript contexts. can someone explain how it changes in functions arrow functions and classes",
+    "tags": [
+      "javascript",
+      "this",
+      "functions",
+      "context"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_132",
+    "user_id": "user_232",
+    "post_title": "what is the difference between `null` `undefined` and `nan` in javascript",
+    "post_body": "javascript has `null` `undefined` and `nan` and i find it difficult to understand the distinction. when should i use each",
+    "tags": [
+      "javascript",
+      "null",
+      "undefined",
+      "nan",
+      "types"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_133",
+    "user_id": "user_232",
+    "post_title": "how to avoid memory leaks in javascript",
+    "post_body": "my web app's performance degrades over time. how can i detect and prevent memory leaks in javascript",
+    "tags": [
+      "javascript",
+      "memory-leak",
+      "performance",
+      "debugging"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_134",
+    "user_id": "user_232",
+    "post_title": "what is the difference between `arraylist` and `linkedlist` in java",
+    "post_body": "im working with lists in java and unsure when to use `arraylist` vs `linkedlist`. what are the pros and cons of each",
+    "tags": [
+      "java",
+      "collections",
+      "arraylist",
+      "linkedlist"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_135",
+    "user_id": "user_232",
+    "post_title": "how does the python gil affect multithreading",
+    "post_body": "im trying to use threads in python for parallel tasks but i keep reading about the gil. what exactly is it and how does it impact performance",
+    "tags": [
+      "python",
+      "gil",
+      "multithreading",
+      "performance"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_136",
+    "user_id": "user_232",
+    "post_title": "how do i use `.env` files with node.js",
+    "post_body": "i want to keep sensitive data out of my node.js code. how do i set up and use a `.env` file",
+    "tags": [
+      "node.js",
+      "dotenv",
+      "env",
+      "configuration"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_137",
+    "user_id": "user_232",
+    "post_title": "what is the difference between `append` and `extend` in python lists",
+    "post_body": "im confused between the use of `append` and `extend` in python lists. they seem similarwhats the actual difference",
+    "tags": [
+      "python",
+      "lists",
+      "append",
+      "extend"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_138",
+    "user_id": "user_232",
+    "post_title": "why is my css flexbox layout breaking on mobile",
+    "post_body": "i built a layout using flexbox but it doesnt look right on smaller screens. how can i make it responsive",
+    "tags": [
+      "css",
+      "flexbox",
+      "responsive-design",
+      "mobile"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_139",
+    "user_id": "user_232",
+    "post_title": "what is the difference between props and state in react",
+    "post_body": "as im building react components im confused about when to use props vs state. could someone explain with examples",
+    "tags": [
+      "reactjs",
+      "props",
+      "state",
+      "components"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_140",
+    "user_id": "user_232",
+    "post_title": "what are promises in javascript and how do they work",
+    "post_body": "i see promises used all the time with async operations in javascript. what are they and how do `.then` and `.catch` work",
+    "tags": [
+      "javascript",
+      "promises",
+      "async",
+      "callbacks"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_141",
+    "user_id": "user_232",
+    "post_title": "how to return json response in flask",
+    "post_body": "im creating a rest api in flask. how can i return a proper json response",
+    "tags": [
+      "flask",
+      "python",
+      "json",
+      "rest-api"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_142",
+    "user_id": "user_232",
+    "post_title": "why does my html form not submit",
+    "post_body": "i have a basic html form but clicking submit doesnt do anything. what are common mistakes that prevent form submission",
+    "tags": [
+      "html",
+      "forms",
+      "submit",
+      "web-development"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_143",
+    "user_id": "user_232",
+    "post_title": "how to run python script as a background process",
+    "post_body": "i want to run my python script in the background on linux. what are my options",
+    "tags": [
+      "python",
+      "linux",
+      "background-process",
+      "scripts"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_144",
+    "user_id": "user_232",
+    "post_title": "what is a race condition in multithreading",
+    "post_body": "i heard that race conditions can occur in concurrent code. what is a race condition and how can i prevent it",
+    "tags": [
+      "multithreading",
+      "concurrency",
+      "race-condition",
+      "synchronization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_145",
+    "user_id": "user_232",
+    "post_title": "how do i resolve a cors error in frontend development",
+    "post_body": "im calling an api from my frontend app and getting a cors error. what causes this and how do i fix it",
+    "tags": [
+      "cors",
+      "javascript",
+      "frontend",
+      "api"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_146",
+    "user_id": "user_232",
+    "post_title": "whats the difference between tcp and udp",
+    "post_body": "im trying to understand when to use tcp or udp in networking. what are the key differences and use cases",
+    "tags": [
+      "networking",
+      "tcp",
+      "udp",
+      "protocols"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_147",
+    "user_id": "user_232",
+    "post_title": "how do i connect to a postgresql database using python",
+    "post_body": "i want to access a postgresql database from my python application. what libraries and setup are required",
+    "tags": [
+      "python",
+      "postgresql",
+      "database",
+      "psycopg2"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_148",
+    "user_id": "user_232",
+    "post_title": "whats the difference between `join` and `union` in sql",
+    "post_body": "im confused about when to use `join` versus `union` in sql queries. can someone explain the difference",
+    "tags": [
+      "sql",
+      "join",
+      "union",
+      "queries"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_149",
+    "user_id": "user_232",
+    "post_title": "how do i use sessions in flask",
+    "post_body": "i want to maintain user login state across requests in flask. how do sessions work and how can i set them up",
+    "tags": [
+      "flask",
+      "sessions",
+      "authentication",
+      "python"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_150",
+    "user_id": "user_232",
+    "post_title": "what are arrow functions in javascript",
+    "post_body": "i see arrow functions used a lot in modern javascript. what are they and how are they different from normal functions",
+    "tags": [
+      "javascript",
+      "arrow-functions",
+      "es6",
+      "functions"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_151",
+    "user_id": "user_232",
+    "post_title": "how do i use sqlite with python",
+    "post_body": "i need to use a lightweight database for my python project. how do i use sqlite and execute queries",
+    "tags": [
+      "python",
+      "sqlite",
+      "database",
+      "sql"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_152",
+    "user_id": "user_232",
+    "post_title": "how do i debug python code line by line",
+    "post_body": "i want to step through my python program to debug a bug. what tools or methods are available for line-by-line debugging",
+    "tags": [
+      "python",
+      "debugging",
+      "pdb",
+      "tools"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_153",
+    "user_id": "user_232",
+    "post_title": "why does javascript hoist variables",
+    "post_body": "i heard that javascript hoists variables and functions. what does hoisting mean and how can it lead to bugs",
+    "tags": [
+      "javascript",
+      "hoisting",
+      "variables",
+      "functions"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_154",
+    "user_id": "user_232",
+    "post_title": "what is middleware in express.js",
+    "post_body": "im learning express.js and keep hearing about middleware functions. what are they and how do they work",
+    "tags": [
+      "node.js",
+      "express",
+      "middleware",
+      "web"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_155",
+    "user_id": "user_232",
+    "post_title": "what is the use of `staticmethod` in python",
+    "post_body": "i saw someone use `staticmethod` in a python class. when should i use it and how is it different from `classmethod`",
+    "tags": [
+      "python",
+      "staticmethod",
+      "classmethod",
+      "decorators"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_156",
+    "user_id": "user_232",
+    "post_title": "how to validate forms in react",
+    "post_body": "i need to validate user input in a react form. what are the best practices for form validation",
+    "tags": [
+      "reactjs",
+      "forms",
+      "validation",
+      "frontend"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_157",
+    "user_id": "user_232",
+    "post_title": "how to handle file uploads in django",
+    "post_body": "i need to allow users to upload files in my django web app. whats the recommended way to set this up and handle the files",
+    "tags": [
+      "django",
+      "file-upload",
+      "python",
+      "media"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_158",
+    "user_id": "user_232",
+    "post_title": "how to center a div in css",
+    "post_body": "ive tried margin auto and text-align center but my `div` still wont center. whats the correct way to horizontally and vertically center a `div`",
+    "tags": [
+      "css",
+      "html",
+      "center",
+      "layout"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_159",
+    "user_id": "user_232",
+    "post_title": "how to implement dark mode in react",
+    "post_body": "i want to add a dark/light mode toggle in my react app. whats the best way to do this without using any external libraries",
+    "tags": [
+      "reactjs",
+      "dark-mode",
+      "theme",
+      "css"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_160",
+    "user_id": "user_232",
+    "post_title": "what is a 500 internal server error and how to fix it",
+    "post_body": "my app sometimes returns a 500 error after form submission. what does this error mean and how can i debug it",
+    "tags": [
+      "server-error",
+      "http",
+      "backend",
+      "debugging"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_161",
+    "user_id": "user_232",
+    "post_title": "how to use docker volumes for persistent data",
+    "post_body": "im using docker to run my postgresql container. how do i set up volumes so that the data persists even if the container stops",
+    "tags": [
+      "docker",
+      "volumes",
+      "postgresql",
+      "persistence"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_162",
+    "user_id": "user_232",
+    "post_title": "how to use react router for navigation",
+    "post_body": "i want to add multiple pages in my react app. how can i use react router for client-side routing",
+    "tags": [
+      "reactjs",
+      "react-router",
+      "routing",
+      "navigation"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_163",
+    "user_id": "user_232",
+    "post_title": "how do i write unit tests in python",
+    "post_body": "im new to testing. whats the best way to start writing unit tests in python using `unittest` or `pytest`",
+    "tags": [
+      "python",
+      "unit-testing",
+      "pytest",
+      "unittest"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_164",
+    "user_id": "user_232",
+    "post_title": "how to prevent sql injection in php",
+    "post_body": "im building a php app with mysql and want to ensure its secure. how can i protect against sql injection",
+    "tags": [
+      "php",
+      "mysql",
+      "security",
+      "sql-injection"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_165",
+    "user_id": "user_232",
+    "post_title": "why does react re-render a component unnecessarily",
+    "post_body": "some of my react components seem to re-render even when props dont change. what could be causing this and how can i optimize it",
+    "tags": [
+      "reactjs",
+      "performance",
+      "re-render",
+      "optimization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_166",
+    "user_id": "user_232",
+    "post_title": "how to use `async/await` with `fetch` in javascript",
+    "post_body": "im calling an api using `fetch` in javascript and want to use async/await syntax. whats the correct way to do this",
+    "tags": [
+      "javascript",
+      "async-await",
+      "fetch",
+      "promises"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_167",
+    "user_id": "user_232",
+    "post_title": "how to send emails from a django app",
+    "post_body": "i want to send a confirmation email after a user registers. how can i send emails in django",
+    "tags": [
+      "django",
+      "email",
+      "smtp",
+      "python"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_168",
+    "user_id": "user_232",
+    "post_title": "how do i clone a git repository",
+    "post_body": "i want to contribute to an open-source project. how do i clone a github repo to my local machine",
+    "tags": [
+      "git",
+      "github",
+      "version-control",
+      "clone"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_169",
+    "user_id": "user_232",
+    "post_title": "whats the difference between `put` and `patch` in rest apis",
+    "post_body": "ive seen both `put` and `patch` used for updating resources. whats the difference between the two in rest",
+    "tags": [
+      "rest",
+      "http",
+      "put",
+      "patch",
+      "api"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_170",
+    "user_id": "user_232",
+    "post_title": "how to create a responsive navbar in html and css",
+    "post_body": "im building a website and want a responsive navigation bar that works on mobile and desktop. how should i approach it",
+    "tags": [
+      "html",
+      "css",
+      "navbar",
+      "responsive-design"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_171",
+    "user_id": "user_232",
+    "post_title": "how to validate user input in a flask app",
+    "post_body": "i want to validate user form input in my flask app. what libraries or techniques should i use",
+    "tags": [
+      "flask",
+      "validation",
+      "forms",
+      "python"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_172",
+    "user_id": "user_232",
+    "post_title": "what is the difference between `var` `let` and `const` in javascript",
+    "post_body": "javascript now has `var` `let` and `const`. what are the differences and when should i use each",
+    "tags": [
+      "javascript",
+      "variables",
+      "es6",
+      "scoping"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_173",
+    "user_id": "user_232",
+    "post_title": "how to paginate api results in node.js",
+    "post_body": "im building a rest api with node.js and mongodb. whats the best way to paginate the results",
+    "tags": [
+      "node.js",
+      "api",
+      "pagination",
+      "mongodb"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_174",
+    "user_id": "user_232",
+    "post_title": "how do i use environment variables in docker compose",
+    "post_body": "i want to keep credentials out of my docker compose file. how can i load environment variables safely",
+    "tags": [
+      "docker",
+      "docker-compose",
+      "env",
+      "configuration"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_175",
+    "user_id": "user_232",
+    "post_title": "what is the difference between rest and graphql",
+    "post_body": "ive used rest apis but now im hearing about graphql. what are the main differences and advantages",
+    "tags": [
+      "api",
+      "rest",
+      "graphql",
+      "comparison"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_176",
+    "user_id": "user_232",
+    "post_title": "how do i deploy a react app to github pages",
+    "post_body": "ive built a simple portfolio in react. what are the steps to deploy it on github pages",
+    "tags": [
+      "reactjs",
+      "deployment",
+      "github-pages",
+      "static-site"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_177",
+    "user_id": "user_232",
+    "post_title": "why is my docker container exiting immediately",
+    "post_body": "i created a docker container but it shuts down right after i run it. what could be the cause",
+    "tags": [
+      "docker",
+      "container",
+      "exit",
+      "debugging"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_178",
+    "user_id": "user_232",
+    "post_title": "how to set up a virtual host in apache",
+    "post_body": "im trying to serve multiple websites from the same apache server. how can i configure virtual hosts",
+    "tags": [
+      "apache",
+      "webserver",
+      "virtualhost",
+      "configuration"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_179",
+    "user_id": "user_232",
+    "post_title": "how to create a custom hook in react",
+    "post_body": "i want to extract logic from a react component. how can i build a reusable custom hook",
+    "tags": [
+      "reactjs",
+      "hooks",
+      "custom-hook",
+      "functional-components"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_180",
+    "user_id": "user_232",
+    "post_title": "how do i prevent xss in a web application",
+    "post_body": "i want to secure my frontend from cross-site scripting attacks. what are the best practices to prevent xss",
+    "tags": [
+      "security",
+      "xss",
+      "frontend",
+      "html"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_181",
+    "user_id": "user_232",
+    "post_title": "how to generate pdfs from html in python",
+    "post_body": "i want to convert an html report to pdf using python. what libraries can do this",
+    "tags": [
+      "python",
+      "pdf",
+      "html",
+      "report-generation"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_182",
+    "user_id": "user_232",
+    "post_title": "what is the difference between synchronous and asynchronous programming",
+    "post_body": "i hear about async/await and event loops. what exactly is the difference between sync and async code",
+    "tags": [
+      "programming",
+      "asynchronous",
+      "synchronous",
+      "concepts"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_183",
+    "user_id": "user_232",
+    "post_title": "how to schedule a task in linux using cron",
+    "post_body": "i want a script to run every day at midnight. how can i schedule it using crontab",
+    "tags": [
+      "linux",
+      "cron",
+      "scheduling",
+      "automation"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_184",
+    "user_id": "user_232",
+    "post_title": "how to store passwords securely in a database",
+    "post_body": "im building user authentication. how should i hash and store passwords to keep them secure",
+    "tags": [
+      "security",
+      "authentication",
+      "passwords",
+      "hashing"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_185",
+    "user_id": "user_232",
+    "post_title": "what is event bubbling in javascript",
+    "post_body": "i read that events in javascript bubble up the dom. what does that mean and how does it affect event handling",
+    "tags": [
+      "javascript",
+      "events",
+      "bubbling",
+      "dom"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_186",
+    "user_id": "user_232",
+    "post_title": "how to connect react frontend with flask backend",
+    "post_body": "i built a flask backend and react frontend separately. how do i connect them for api calls",
+    "tags": [
+      "reactjs",
+      "flask",
+      "api",
+      "integration"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_187",
+    "user_id": "user_232",
+    "post_title": "how to create a rest api with fastapi",
+    "post_body": "i want to build a rest api using fastapi. whats the basic structure and how do i define endpoints",
+    "tags": [
+      "python",
+      "fastapi",
+      "rest-api",
+      "web"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_188",
+    "user_id": "user_232",
+    "post_title": "how do i get current date and time in javascript",
+    "post_body": "i need to display the current date and time on a webpage. how can i do that using javascript",
+    "tags": [
+      "javascript",
+      "date",
+      "time",
+      "datetime"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_189",
+    "user_id": "user_232",
+    "post_title": "how to serve static files in express.js",
+    "post_body": "i want to serve images and css files using express. how do i configure it",
+    "tags": [
+      "node.js",
+      "express",
+      "static-files",
+      "web"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_190",
+    "user_id": "user_232",
+    "post_title": "what is a middleware function in redux",
+    "post_body": "im using redux in my react app. what is middleware in this context and how does it work",
+    "tags": [
+      "reactjs",
+      "redux",
+      "middleware",
+      "state-management"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_191",
+    "user_id": "user_232",
+    "post_title": "how to write sql join with multiple tables",
+    "post_body": "i need to query data from three related tables in sql. how do i write a join for this",
+    "tags": [
+      "sql",
+      "join",
+      "multiple-tables",
+      "queries"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_192",
+    "user_id": "user_232",
+    "post_title": "how to configure nginx as a reverse proxy",
+    "post_body": "i want nginx to forward requests to my backend server. how do i set up reverse proxying",
+    "tags": [
+      "nginx",
+      "reverse-proxy",
+      "configuration",
+      "web"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_193",
+    "user_id": "user_232",
+    "post_title": "how to fix modulenotfounderror in python",
+    "post_body": "when i run my script i get a `modulenotfounderror`. how can i resolve this and manage dependencies",
+    "tags": [
+      "python",
+      "error",
+      "modulenotfound",
+      "dependencies"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_194",
+    "user_id": "user_232",
+    "post_title": "what is lazy loading in web development",
+    "post_body": "i want to improve load time by loading images only when visible. how does lazy loading work",
+    "tags": [
+      "performance",
+      "lazy-loading",
+      "web",
+      "optimization"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_195",
+    "user_id": "user_232",
+    "post_title": "how to update state based on previous state in react",
+    "post_body": "im trying to increment a counter based on the previous state. whats the right way to do this in react",
+    "tags": [
+      "reactjs",
+      "state",
+      "hooks",
+      "update"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_196",
+    "user_id": "user_232",
+    "post_title": "how to validate forms in react",
+    "post_body": "i need to validate user input in a react form. what are the best practices for form validation",
+    "tags": [
+      "reactjs",
+      "forms",
+      "validation",
+      "frontend"
+    ],
+    "is_duplicate": false,
+    "duplicate_of": null,
+    "similarity_score": 0.0
+  },
+  {
+    "post_id": "post_199",
+    "user_id": "user_232",
+    "post_title": "find pair sum in array",
+    "post_body": "given an array of integers check if any two numbers sum to a target value using hashing.",
+    "tags": [
+      "array",
+      "hashmap",
+      "pair-sum"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_1",
+    "similarity_score": 0.92
+  },
+  {
+    "post_id": "post_200",
+    "user_id": "user_232",
+    "post_title": "two number sum algorithm",
+    "post_body": "efficient solution to find if two elements in an array equal the target sum.",
+    "tags": [
+      "algorithm",
+      "sum",
+      "coding"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_1",
+    "similarity_score": 0.88
+  },
+  {
+    "post_id": "post_201",
+    "user_id": "user_232",
+    "post_title": "stock profit maximization",
+    "post_body": "how to calculate maximum profit from daily stock price fluctuations",
+    "tags": [
+      "stocks",
+      "profit",
+      "time-series"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_2",
+    "similarity_score": 0.85
+  },
+  {
+    "post_id": "post_202",
+    "user_id": "user_232",
+    "post_title": "detecting duplicate numbers",
+    "post_body": "algorithm to identify the repeated number in an array of size n with elements 1 to n-1.",
+    "tags": [
+      "duplicates",
+      "cycle-detection",
+      "arrays"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_3",
+    "similarity_score": 0.91
+  },
+  {
+    "post_id": "post_203",
+    "user_id": "user_232",
+    "post_title": "array product calculation",
+    "post_body": "compute product of all array elements except current index without division.",
+    "tags": [
+      "prefix-product",
+      "arrays",
+      "leetcode"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_4",
+    "similarity_score": 0.89
+  },
+  {
+    "post_id": "post_204",
+    "user_id": "user_232",
+    "post_title": "kadane's algorithm explained",
+    "post_body": "finding the contiguous subarray with maximum sum using dynamic programming.",
+    "tags": [
+      "subarray",
+      "kadane",
+      "maximum-sum"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_5",
+    "similarity_score": 0.87
+  },
+  {
+    "post_id": "post_205",
+    "user_id": "user_232",
+    "post_title": "minimum in rotated array",
+    "post_body": "how to find the smallest element in a rotated sorted array efficiently",
+    "tags": [
+      "binary-search",
+      "rotated-array",
+      "minimum"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_7",
+    "similarity_score": 0.93
+  },
+  {
+    "post_id": "post_206",
+    "user_id": "user_232",
+    "post_title": "triplet sum to zero",
+    "post_body": "find all unique triplets in the array that sum to 0 with on2 solution.",
+    "tags": [
+      "two-pointer",
+      "triplets",
+      "sum-zero"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_9",
+    "similarity_score": 0.9
+  },
+  {
+    "post_id": "post_207",
+    "user_id": "user_232",
+    "post_title": "water container problem",
+    "post_body": "calculate maximum water that can be contained between vertical lines using two pointers.",
+    "tags": [
+      "two-pointer",
+      "container",
+      "optimization"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_10",
+    "similarity_score": 0.86
+  },
+  {
+    "post_id": "post_208",
+    "user_id": "user_232",
+    "post_title": "rainwater trapping solution",
+    "post_body": "compute how much rainwater can be trapped between elevation bars using dynamic programming.",
+    "tags": [
+      "dynamic-programming",
+      "rainwater",
+      "stack"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_12",
+    "similarity_score": 0.94
+  },
+  {
+    "post_id": "post_209",
+    "user_id": "user_232",
+    "post_title": "interval merging technique",
+    "post_body": "algorithm to combine all overlapping intervals in a list of time ranges.",
+    "tags": [
+      "sorting",
+      "intervals",
+      "merging"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_14",
+    "similarity_score": 0.88
+  },
+  {
+    "post_id": "post_210",
+    "user_id": "user_232",
+    "post_title": "zero matrix algorithm",
+    "post_body": "in-place method to set entire row and column to zero if an element is zero.",
+    "tags": [
+      "matrix",
+      "in-place",
+      "optimization"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_16",
+    "similarity_score": 0.91
+  },
+  {
+    "post_id": "post_211",
+    "user_id": "user_232",
+    "post_title": "longest unique character substring",
+    "post_body": "sliding window technique to find longest substring without repeating characters.",
+    "tags": [
+      "sliding-window",
+      "substring",
+      "hashset"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_20",
+    "similarity_score": 0.89
+  },
+  {
+    "post_id": "post_212",
+    "user_id": "user_232",
+    "post_title": "anagram detection",
+    "post_body": "check if two strings are anagrams using frequency counting in on time.",
+    "tags": [
+      "hashmap",
+      "anagram",
+      "strings"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_23",
+    "similarity_score": 0.93
+  },
+  {
+    "post_id": "post_213",
+    "user_id": "user_232",
+    "post_title": "longest palindrome substring",
+    "post_body": "expand around center approach to find the longest palindromic substring.",
+    "tags": [
+      "palindrome",
+      "substring",
+      "center-expansion"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_27",
+    "similarity_score": 0.9
+  },
+  {
+    "post_id": "post_214",
+    "user_id": "user_232",
+    "post_title": "linked list reversal",
+    "post_body": "iterative and recursive methods to reverse a singly linked list.",
+    "tags": [
+      "linked-list",
+      "reverse",
+      "pointers"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_30",
+    "similarity_score": 0.95
+  },
+  {
+    "post_id": "post_215",
+    "user_id": "user_232",
+    "post_title": "merging two sorted linked lists",
+    "post_body": "how to combine two sorted linked lists into one sorted list efficiently.",
+    "tags": [
+      "linked-list",
+      "merge",
+      "recursion"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_32",
+    "similarity_score": 0.87
+  },
+  {
+    "post_id": "post_216",
+    "user_id": "user_232",
+    "post_title": "tree height calculation",
+    "post_body": "recursive dfs approach to find maximum depth of a binary tree.",
+    "tags": [
+      "binary-tree",
+      "depth",
+      "recursion"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_42",
+    "similarity_score": 0.92
+  },
+  {
+    "post_id": "post_217",
+    "user_id": "user_232",
+    "post_title": "validate binary search tree",
+    "post_body": "check if a binary tree satisfies bst properties using inorder traversal.",
+    "tags": [
+      "bst",
+      "validation",
+      "inorder"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_50",
+    "similarity_score": 0.94
+  },
+  {
+    "post_id": "post_218",
+    "user_id": "user_232",
+    "post_title": "matrix spiral traversal",
+    "post_body": "algorithm to traverse a 2d matrix in spiral order with omn time.",
+    "tags": [
+      "matrix",
+      "simulation",
+      "spiral-order"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_17",
+    "similarity_score": 0.89
+  },
+  {
+    "post_id": "post_219",
+    "user_id": "user_910",
+    "post_title": "reading environment variables in a node.js project",
+    "post_body": "how can i access and use environment variables inside my node.js app for configuration settings",
+    "tags": [
+      "node.js",
+      "environment-variables",
+      "configuration",
+      "backend"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_110",
+    "similarity_score": 0.89
+  },
+  {
+    "post_id": "post_220",
+    "user_id": "user_911",
+    "post_title": "understanding public private and protected in java",
+    "post_body": "what are the differences between public private and protected keywords in java's class structure",
+    "tags": [
+      "java",
+      "access-modifiers",
+      "oop",
+      "encapsulation"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_111",
+    "similarity_score": 0.91
+  },
+  {
+    "post_id": "post_221",
+    "user_id": "user_912",
+    "post_title": "purpose of virtual functions in c programming",
+    "post_body": "why should we use virtual functions in c how do they help compared to non-virtual ones",
+    "tags": [
+      "c++",
+      "virtual-functions",
+      "polymorphism",
+      "oop"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_112",
+    "similarity_score": 0.9
+  },
+  {
+    "post_id": "post_222",
+    "user_id": "user_913",
+    "post_title": "pythons indentation vs braces why it matters",
+    "post_body": "languages like java use curly braces for blocks. why does python rely on indentation and how does this affect readability",
+    "tags": [
+      "python",
+      "syntax",
+      "indentation",
+      "code-style"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_113",
+    "similarity_score": 0.88
+  },
+  {
+    "post_id": "post_223",
+    "user_id": "user_914",
+    "post_title": "synchronous vs asynchronous code explained",
+    "post_body": "what is the core difference between asynchronous and synchronous code in javascript and when should each be used",
+    "tags": [
+      "javascript",
+      "asynchronous",
+      "synchronous",
+      "async-await"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_114",
+    "similarity_score": 0.92
+  },
+  {
+    "post_id": "post_224",
+    "user_id": "user_915",
+    "post_title": "best way to center a div in css",
+    "post_body": "what is the recommended approach to vertically and horizontally center a div element using css",
+    "tags": [
+      "css",
+      "html",
+      "center",
+      "web-development"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_115",
+    "similarity_score": 0.87
+  },
+  {
+    "post_id": "post_225",
+    "user_id": "user_916",
+    "post_title": "what does __init__ do in python classes",
+    "post_body": "im confused about the __init__ function in python. is it similar to a constructor in other languages",
+    "tags": [
+      "python",
+      "classes",
+      "init",
+      "oop"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_116",
+    "similarity_score": 0.9
+  },
+  {
+    "post_id": "post_226",
+    "user_id": "user_917",
+    "post_title": "npm vs npx - what's the difference",
+    "post_body": "i see both npm and npx being used in node.js tutorials. what are they and how do they differ",
+    "tags": [
+      "node.js",
+      "npm",
+      "npx",
+      "javascript"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_117",
+    "similarity_score": 0.91
+  },
+  {
+    "post_id": "post_227",
+    "user_id": "user_918",
+    "post_title": "why css styles might not apply to html",
+    "post_body": "even after linking my css file it doesnt seem to affect my html page. what could be the reason",
+    "tags": [
+      "css",
+      "html",
+      "styling",
+      "web"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_118",
+    "similarity_score": 0.88
+  },
+  {
+    "post_id": "post_228",
+    "user_id": "user_919",
+    "post_title": "using async/await with fetch api in javascript",
+    "post_body": "can someone guide me on using fetch with async/await properly including how to handle exceptions",
+    "tags": [
+      "javascript",
+      "fetch",
+      "async-await",
+      "api"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_119",
+    "similarity_score": 0.9
+  },
+  {
+    "post_id": "post_229",
+    "user_id": "user_920",
+    "post_title": "get vs post http methods what's the difference",
+    "post_body": "when should i use get versus post in web api calls i need help understanding their differences.",
+    "tags": [
+      "http",
+      "get",
+      "post",
+      "api"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_120",
+    "similarity_score": 0.92
+  },
+  {
+    "post_id": "post_230",
+    "user_id": "user_921",
+    "post_title": "why does nan not equal itself in javascript",
+    "post_body": "`nan === nan` evaluates to false. why is that and how can i check for nan correctly",
+    "tags": [
+      "javascript",
+      "nan",
+      "equality",
+      "weird-behavior"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_121",
+    "similarity_score": 0.89
+  },
+  {
+    "post_id": "post_231",
+    "user_id": "user_922",
+    "post_title": "how to implement context in react",
+    "post_body": "i want to avoid passing props manually in react. how can i make use of the context api for state sharing",
+    "tags": [
+      "reactjs",
+      "context",
+      "state-management",
+      "frontend"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_122",
+    "similarity_score": 0.91
+  },
+  {
+    "post_id": "post_232",
+    "user_id": "user_923",
+    "post_title": "why does my function in python return none",
+    "post_body": "i expected my function to return a value but it returns none. what might be the mistake",
+    "tags": [
+      "python",
+      "return",
+      "functions",
+      "none"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_123",
+    "similarity_score": 0.89
+  },
+  {
+    "post_id": "post_233",
+    "user_id": "user_924",
+    "post_title": "installing packages with pip in python",
+    "post_body": "how do i install python libraries like requests using pip in my project",
+    "tags": [
+      "python",
+      "pip",
+      "installation",
+      "packages"
+    ],
+    "is_duplicate": true,
+    "duplicate_of": "post_124",
+    "similarity_score": 0.88
+  }
+]

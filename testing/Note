@@ -1,0 +1,13 @@
+Testing and Docker
+Test cases were not included inside the Docker container. All test cases for both Tag Generator and Similarity Checker microservices were developed and executed locally within a virtual environment during the development and testing phase.
+
+This approach was chosen because:
+
+The Docker container is primarily intended to run the production FastAPI application.
+
+Including testing logic inside the container is not necessary at this stage since testing is a separate development phase, not part of the runtime environment.
+
+This separation ensures that the final Docker image remains lightweight and production-ready, without including development tools and test scripts.
+
+If needed in the future (e.g., CI/CD pipeline integration), testing can easily be incorporated into the Docker process.
+
